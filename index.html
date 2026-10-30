@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'zbekiston avtomobilari veb-sayti</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .animated-banner {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+            animation: moveBanner 3s infinite alternate;
+        }
+
+        @keyframes moveBanner {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.02); }
+        }
+
+        .btn-buy {
+            background-color: #28a745;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-buy:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>O'zbekiston avtomobilari veb-sayti</h1>
+        <nav>
+            <a href="#models">Modellar</a>
+            <a href="#media">Media Reklama</a>
+            <a href="#docs">Hujjatlar</a>
+            <a href="#order">Buyurtma Berish</a>
+        </nav>
+    </header>
+
+    <div class="animated-banner">
+        Eng so'nggi va zamonaviy avtomobillarini kerak bulsa biz bilan bog'lang.
+    </div>
+
+    <div class="container">
+        
+        <!-- Modellar, Rasmlar va Sotib olish tugmasi -->
+        <section id="models">
+            <h2>O'zbekiston avtomobillar Asosiy Modellari</h2>
+            <p>O'zbekistonda eng xaridorgir avtomobillar va sotib olish imkoniyati:</p>
+            <ul>
+                <li><strong>Chevrolet Tracker</strong> - Zamonaviy va shinam krossover</li>
+                <li><strong>Chevrolet Onix</strong> - Zamonaviy va tejamkor sedan</li>
+                <li><strong>Chevrolet Cobalt</strong> - Ishonchli va hamyonbop oilaviy mashina</li>
+                <li><strong>Chevrolet Gentra</strong> - Ommabop qulay sedan</li>
+            </ul>
+
+            <div class="car-grid">
+                <div class="car-card">
+                    <img src="tracker.jpg" alt="Chevrolet Tracker" usemap="#trackermap">
+                    <h3>Chevrolet Tracker</h3>
+                    <p>Narxi: ~220 000 000 so'm</p>
+                    <a href="#order" class="btn-buy">Sotib olish</a>
+                    <map name="trackermap">
+                        <area shape="rect" coords="0,0,150,150" alt="Tracker" href="#order">
+                    </map>
+                </div>
+
+                <div class="car-card">
+                    <img src="onix.jpg" alt="Chevrolet Onix">
+                    <h3>Chevrolet Onix</h3>
+                    <p>Narxi: ~180 000 000 so'm</p>
+                    <a href="#order" class="btn-buy">Sotib olish</a>
+                </div>
+
+                <div class="car-card">
+                    <img src="cobalt.jpg" alt="Chevrolet Cobalt">
+                    <h3>Chevrolet Cobalt</h3>
+                    <p>Narxi: ~140 000 000 so'm</p>
+                    <a href="#order" class="btn-buy">Sotib olish</a>
+                </div>
+
+                <div class="car-card">
+                    <img src="gentra.jpg" alt="Chevrolet Gentra">
+                    <h3>Chevrolet Gentra</h3>
+                    <p>Narxi: ~160 000 000 so'm</p>
+                    <a href="#order" class="btn-buy">Sotib olish</a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Jadvallar -->
+        <section>
+            <h2>Avtomobillar Texnik Ko'rsatkichlari</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Dvigatel Hajmi</th>
+                        <th>Ot Kuchi</th>
+                        <th>Yoqilg'i Sarfi (100km)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chevrolet Onix</td>
+                        <td>1.2 L Turbo</td>
+                        <td>132 ot kuchi</td>
+                        <td>6.2 L</td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet Tracker</td>
+                        <td>1.2 L Turbo</td>
+                        <td>132 ot kuchi</td>
+                        <td>6.5 L</td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet Cobalt</td>
+                        <td>1.5 L</td>
+                        <td>106 ot kuchi</td>
+                        <td>6.7 L</td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet Gentra</td>
+                        <td>1.5 L</td>
+                        <td>105 ot kuchi</td>
+                        <td>8.5 L</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Video fayl -->
+        <section id="media">
+            <h2>Media Materiallar (Video Reklama)</h2>
+            <div class="video-container">
+                <video controls width="100%">
+                    <source src="reklama.mp4" type="video/mp4">
+                    Brauzeringiz video tegini qo'llab-quvvatlamaydi.
+                </video>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- PDF fayl -->
+        <section id="docs">
+            <h2>Rasmiy Hujjatlar va Kataloglar</h2>
+            <p>
+                <a href="katalog.pdf" target="_blank" class="pdf-link">[PDF] UzAuto Motors katalogini yuklab olish</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Sotib olish / Ariza formasi -->
+        <section id="order">
+            <h2>Avtomobil Xarid Qilish va Buyurtma Berish</h2>
+            <p>Tanlagan avtomobilingizni sotib olish uchun ariza qoldiring:</p>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">F.I.SH:</label>
+                    <input type="text" id="name" name="name" placeholder="Ismingiz va familiyangizni kiriting" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon raqamingiz:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="car-select">Sotib olinadigan avtomobil modeli:</label>
+                    <select id="car-select" name="car">
+                        <option value="tracker">Chevrolet Tracker (~220 mln so'm)</option>
+                        <option value="onix">Chevrolet Onix (~180 mln so'm)</option>
+                        <option value="cobalt">Chevrolet Cobalt (~140 mln so'm)</option>
+                        <option value="gentra">Chevrolet Gentra (~160 mln so'm)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment">To'lov turi:</label>
+                    <select id="payment" name="payment">
+                        <option value="cash">Naqd pul orqali to'lov</option>
+                        <option value="credit">Avtokredit (Nashiya)</option>
+                        <option value="leasing">Lizing asosida</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Qo'shimcha istaklar (rangi, komplektatsiyasi):</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Masalan: Oq rangli, LTZ komplektatsiya..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit" style="cursor: pointer;">Buyurtmani Rasmiylashtirish</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; Shukurov Nodirbekning veb-sayt.</p>
+    </footer>
+
+</body>
+</html>
